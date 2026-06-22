@@ -22,7 +22,8 @@ const message = await client.messages.create({
       role: "user",
       content: `Search for the most recent news about NASA Administrator Jared Isaacman. 
         Find the most recent verifiable location he was physically present at, based on 
-        press releases, news conferences, or official events. Respond with this sentence, and only this sentence, exactly, in the citations: Jared Isaacman was last seen in [Location], on [date], according to [url source]. 
+        press releases, news conferences, or official events. Try very hard to ensure the news is less than a week out of date.
+        Respond with this sentence, and only this sentence, exactly, in the citations: Jared Isaacman was last seen in [Location], on [date], according to [url source]. 
         Here is a cool haiku about it: [haiku].`,
     }
   ]
