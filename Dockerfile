@@ -7,10 +7,10 @@ RUN npm install
 
 COPY . .
 
-RUN node fetchLocation.js || true
+RUN node fetch-location.js || true
 
 RUN npm install -g http-server
 
 EXPOSE 3000
 
-CMD sh -c "node fetchLocation.js && http-server . -p 3000"
+CMD sh -c "node fetch-location.js && http-server . -p 3000"
