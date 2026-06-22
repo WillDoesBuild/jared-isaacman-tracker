@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Where is Jared Isaacman right now?</h1>
+    <p> Wouldn't you like to know.</p>
+    <script>
+  fetch("location.txt")
+    .then((response) => response.text())
+    .then((text) => {
+      document.getElementById("location").textContent = text;
+    });
+    </script>
+    <p id="location"></p>
+</body>
+
+</html>
